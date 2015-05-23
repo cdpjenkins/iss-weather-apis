@@ -32,7 +32,7 @@
             [cider/cider-nrepl "0.9.0-SNAPSHOT"]]
 
   :ring {:handler iss-weather-apis.web/app
-         :uberwar-name "iss-weather.war"
+         :uberwar-name "iss-weather-apis.war"
          :nrepl {:start? true}}
 
 
@@ -51,7 +51,8 @@
                 :cache-analysis true
                 :pretty-print true
                 :closure-extra-annotations #{"api" "observable"}
-                :source-map true}}
+;                :source-map true
+                         }}
              {:id "release"
               :source-paths ["cljs_src"]
               :compiler {

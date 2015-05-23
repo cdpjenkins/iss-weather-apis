@@ -95,7 +95,7 @@
        (resp/response
         (h/html
          [:head
-          [:title "OSM"]
+          [:title "ISS Weather"]
           [:script {:src "/generated/iss_weather_apis.js"}]]
          [:body
           [:div {:id "demoMap" :style "height:80%,width:90%" }]
